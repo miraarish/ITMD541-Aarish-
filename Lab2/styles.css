@@ -1,7 +1,14 @@
 /* Flexbox Part 1 */
 
 #flex-section1 ul {
-
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 48px;
+	padding-right: 48px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 /* end Flexbox Part 1 */
@@ -10,23 +17,27 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
-
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
 }
 
 #flex-section2 li {
-
+	flex: 1;
 }
 
 #flex-section2 .item1 {
-
+	order: 1;
 }
 
 #flex-section2 .item2 {
-
+	order: 3;
 }
 
 #flex-section2 .item3 {
-
+	order: 2;
 }
 
 /* end Flexbox Part 2 */
@@ -35,11 +46,18 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
-
+	display: flex;
+	height: auto;
+	padding: 150px;
+	justify-content: center;
 }
 
 #flex-section3 .tags ul {
-
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
 }
 
 /* end Flexbox Part 3 */
@@ -48,7 +66,10 @@
 /* Grid Part 1 */
 
 #grid-section1 .grid {
-
+	display:grid;
+	grid-template-columns: auto	 auto auto auto;
+	gap: 20px;
+	grid-auto-rows: 100px;
 }
 
 /* end Grid Part 1 */
@@ -57,11 +78,17 @@
 /* Grid Part 2 */
 
 #grid-section2 .gridboxblue {
-
+	grid-column-start: 4;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	z-index: 2;
 }
 
 #grid-section2 .gridboxred {
-
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 /* end Grid Part 2 */
@@ -70,23 +97,33 @@
 /* Grid Part 3 */
 
 #grid-section3 .grid {
-
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 100px 300px 100px;
+	gap: 10px;
 }
 
 #grid-section3 .box1 {
-
+	grid-column-start: 1;
+	grid-column-end: 4;
 }
 
 #grid-section3 .box2 {
-
+	grid-row-start: 2;
+	grid-column-start: 2;
+	grid-column-end: 4;
 }
 
 #grid-section3 .box3 {
-
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
 }
 
 #grid-section3 .box4 {
-
+	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 4;
 }
 
 /* end Grid Part 3 */
@@ -107,8 +144,7 @@
 #transition-section .box a:hover {
 	background-color: #cc0000;
 	color: #fff;
-
-
+	transition-duration: 0.5s;
 }
 
 /* end Transition Part */
