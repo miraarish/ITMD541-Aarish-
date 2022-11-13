@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <section class="top-banner">
+      <div class="container">
+        <h1 class="heading">Simple Weather App</h1>
+        <div class="form">
+          <input id="cityInp" type="text" placeholder="Search for a city" autofocus />
+          <button id="getLoc">SUBMIT</button>
+          <button id="currentLoc">Location</button>
+          <span id="error-msg"class="msg"></span>
+        </div>
+
+        <div>
+            <h1 class="loading" id="loading"></h1>
+        </div>
+        <div class="current-temperature">
+            <h1 id="showRegion" class="main-city"></h1>
+            <h3 id="day-hour"></h3>
+            <img id="main-icon"rc="" alt="">
+            <h3 id="comment"></h3>
+            <h3 id="precip"></h3>
+            <h3 id="humidity"></h3>
+            <h3 id="wind"></h3>
+            <h1 id="showTemp" class="main-temp"></h1>
+        </div>
+      </div>
+    </section>
+    <section class="ajax-section">
+      <div class="container">
+        <ul class="days"></ul>
+      </div>
+    </section>
+  </body>
+</html>
